@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Transport Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: #267c58;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin: 10px 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      nav ul li a:hover {
+        color: yellow;
+      }
+      footer {
+        background-color: #1b3b28;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: darkblue; text-align: center">City Transport Portal</h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Routes</a></li>
+        <li><a href="busstops.html">Bus Stops</a></li>
+      </ul>
+    </nav>
+
+    <div class="delay-alert">⚠ Bus Route 25 is Delayed!</div>
+
+    <div class="routes-container">
+      <div class="route-card">
+        <h3>Route 10</h3>
+        <p>Stops: A → B → C</p>
+        <p>Timing: 6:00 AM - 10:00 PM</p>
+      </div>
+
+      <div class="route-card" id="highlight">
+        <h3>Route 25</h3>
+        <p>Stops: D → E → F</p>
+        <p>Timing: 7:00 AM - 9:00 PM</p>
+      </div>
+    </div>
+
+    <h2 style="text-align: center">Stop Sequence</h2>
+    <div class="stops-flex">
+      <div>Stop 1</div>
+      <div>→</div>
+      <div>Stop 2</div>
+      <div>→</div>
+      <div>Stop 3</div>
+      <div>→</div>
+      <div>Stop 4</div>
+    </div>
+
+    <footer>© 2026 City Transport Department</footer>
+  </body>
+</html>

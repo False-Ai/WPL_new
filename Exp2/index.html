@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Transport Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: #267c58;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin: 10px 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      nav ul li a:hover {
+        color: yellow;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 40px 20px;
+        background-color: #ecf0f1;
+      }
+
+      .hero h2 {
+        color: #2c3e50;
+      }
+
+      .features {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 30px;
+        flex-wrap: wrap;
+      }
+
+      .feature-card {
+        width: 250px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .feature-card h3 {
+        color: #2980b9;
+      }
+
+      .delay-alert {
+        text-align: center;
+        background-color: #f39c12;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+      }
+
+      footer {
+        background-color: #1b3b28;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: darkblue; text-align: center">City Transport Portal</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="routes.html">Routes</a></li>
+        <li><a href="busstops.html">Bus Stops</a></li>
+      </ul>
+    </nav>
+
+    <div class="delay-alert">⚠ Live Update: Bus Route 25 is Delayed</div>
+
+    <div class="hero">
+      <h2>Welcome to the City Transport Portal</h2>
+      <p>
+        Get real-time updates, explore bus routes, and find nearby bus stops —
+        all in one place.
+      </p>
+    </div>
+
+    <div class="features">
+      <div class="feature-card">
+        <h3>🚌 Bus Routes</h3>
+        <p>View all city bus routes with stops and timings.</p>
+        <a href="routes.html">View Routes →</a>
+      </div>
+
+      <div class="feature-card">
+        <h3>📍 Bus Stops</h3>
+        <p>Locate nearby bus stops and check stop sequences.</p>
+        <a href="busstops.html">View Stops →</a>
+      </div>
+
+      <div class="feature-card">
+        <h3>⏰ Live Alerts</h3>
+        <p>Stay informed about delays and service changes.</p>
+      </div>
+    </div>
+
+    <footer>© 2026 City Transport Department</footer>
+  </body>
+</html>
