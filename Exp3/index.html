@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Smart City Transport Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Smart City Transport Portal</h1>
+
+<h3 id="dateTime"></h3>
+
+<button onclick="showRoutes()">Show Bus Routes</button>
+<div id="routes"></div>
+
+<h3>Fare Calculator</h3>
+<input type="number" id="stops" placeholder="Enter number of stops">
+<button onclick="calculateFare()">Calculate Fare</button>
+<p id="fareResult"></p>
+
+<h3>Bus Availability</h3>
+<button onclick="checkAvailability()">Check Service</button>
+<p id="availability"></p>
+
+<h3>Bus Stops</h3>
+<ul id="busStops"></ul>
+
+<h3>Search Bus Stop</h3>
+<input type="text" id="searchStop" placeholder="Enter stop name">
+<button onclick="searchBusStop()">Search</button>
+<p id="searchResult"></p>
+
+<h3>Route Details</h3>
+<input type="number" id="routeNumber" placeholder="Enter route number">
+<button onclick="showRoute()">Show Route</button>
+<p id="routeDetails"></p>
+
+<h3>Delay Notification</h3>
+<button onclick="showDelay()">Check Delay</button>
+<p id="delayMsg"></p>
+
+<h3>Bus Schedule</h3>
+<table border="1" id="scheduleTable"></table>
+
+<script src="skeleton.js"></script>
+
+</body>
+</html>
