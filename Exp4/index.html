@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Transport Portal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Transport Portal - Route Enquiry</h2>
+
+    <form id="transportForm">
+      <label>Full Name</label>
+      <input type="text" id="fullName" required />
+      <span class="error-message"></span>
+
+      <label>Email Address</label>
+      <input type="email" id="email" required />
+      <span class="error-message"></span>
+
+      <label>Phone Number</label>
+      <input type="text" id="phone" required />
+      <span class="error-message"></span>
+
+      <label>Select Transport Type</label>
+      <select id="transportType" required>
+        <option value="">Select</option>
+        <option>Bus</option>
+        <option>Metro</option>
+        <option>Train</option>
+      </select>
+      <span class="error-message"></span>
+
+      <label>Source Stop</label>
+      <input type="text" id="source" required />
+      <span class="error-message"></span>
+
+      <label>Destination Stop</label>
+      <input type="text" id="destination" required />
+      <span class="error-message"></span>
+
+      <label>Travel Date</label>
+      <input type="date" id="travelDate" required />
+      <span class="error-message"></span>
+
+      <button type="submit">Search Route</button>
+    </form>
+
+    <script src="validation.js"></script>
+  </body>
+</html>
